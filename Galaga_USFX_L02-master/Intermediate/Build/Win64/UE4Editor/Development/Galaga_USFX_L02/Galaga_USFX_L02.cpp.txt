@@ -1,0 +1,2 @@
+R:\usfx\SIS457\Galaga_USFX_L02-master\Galaga_USFX_L02-master\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_L02\Definitions.Galaga_USFX_L02.h
+R:\usfx\SIS457\Galaga_USFX_L02-master\Galaga_USFX_L02-master\Source\Galaga_USFX_L02\Galaga_USFX_L02.h
