@@ -12,7 +12,7 @@ void ANaveEnemigaCaza::BeginPlay()
 
 ANaveEnemigaCaza::ANaveEnemigaCaza()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> malla(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_QuadPyramid.Shape_QuadPyramid'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> malla(TEXT("StaticMesh'/Game/StarterContent/Props/SM_Couch.SM_Couch'"));
 	mallaNaveEnemiga->SetStaticMesh(malla.Object);
 
 }
@@ -30,8 +30,8 @@ void ANaveEnemigaCaza::Mover(float DeltaTime)
 	FVector PosicionActual = GetActorLocation();
 
 	// Genera nuevas coordenadas X e Y aleatorias
-	float NuevaX = FMath::RandRange(-1000.0f, 1000.0f) * DeltaTime;
-	float NuevaY = FMath::RandRange(-1000.0f, 1000.0f) * DeltaTime;
+	float NuevaX = FMath::RandRange(-600.0f, 600.0f) * DeltaTime;
+	float NuevaY = FMath::RandRange(-600.0f, 600.0f) * DeltaTime;
 
 	// Crea un nuevo vector de posición con las coordenadas aleatorias y la misma Z que la posición actual
 	FVector NuevaPosicion = FVector(PosicionActual.X + NuevaX, PosicionActual.Y + NuevaY, PosicionActual.Z);

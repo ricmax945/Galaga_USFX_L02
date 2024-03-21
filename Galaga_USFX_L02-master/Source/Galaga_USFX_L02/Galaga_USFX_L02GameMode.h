@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
 #include "Galaga_USFX_L02GameMode.generated.h"
+//#include <vector>
 
 class ANaveEnemiga;
 class ANaveEnemigaCaza;
@@ -43,6 +44,10 @@ public:
 
 	AEnemyMotherShip* EnemyMotherShip01;
 
+public:
+	TArray<ANaveEnemiga*> TANavesEnemigas;
+	TArray<ANaveEnemigaCaza*> TANavesEnemigasCaza;
+	TArray<ANaveEnemigaTransporte*> TANavesEnemigasTransporte;
 
 };
 
